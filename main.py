@@ -1,5 +1,6 @@
 import random
 
+# All the list in this code is are insode this
 firstname = ['Ariff', 'Luqman', 'Azizul', 'Haikal', 'Syabil', 'Haziq']
 lastname = ['Rahimin', 'Hakim', 'Naim', 'Jalal', 'Zaman', 'Iman']
 

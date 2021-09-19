@@ -1,4 +1,5 @@
 import random
+import re
 
 # All the list in this code is are insode this
 firstname = ['Ariff', 'Luqman', 'Azizul', 'Haikal', 'Syabil', 'Haziq']
@@ -23,12 +24,15 @@ def main():
         main()
     elif(k == '4'):
         print('goodbye :)')
+    else:
+        print('Your input is not valid, try again')
+        main()
 
 
 def newfirstname():
     print('Insert a new name')
     x = input()
-    if(isinstance(x, str) == True):
+    if re.match(r'[A-Za-z]', x):
         firstname.append(x)
         print(firstname)
     else:
@@ -39,7 +43,7 @@ def newfirstname():
 def newlastname():
     print('Insert a new name')
     x = input()
-    if(isinstance(x, str) == True):
+    if re.match(r'[A-Za-z]', x):
         lastname.append(x)
         print(lastname)
     else:
